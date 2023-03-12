@@ -77,11 +77,8 @@ form .input-field {
   margin-top: 0.3rem;
   color: red;
   font-size: 0.8rem;
-  display: none;
 }
-.invalid .error {
-  display: flex;
-}
+
 .input-field-gd {
   display: grid;
   grid-template-columns: 20% 80%;

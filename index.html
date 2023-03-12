@@ -17,9 +17,11 @@
               type="text"
               id="name"
               required
-              placeholder="Enter Your Name"
+              placeholder="Enter Your Full Name"
+              onkeyup="validateName()"
             />
           </div>
+          <p class="error" id="name-error"></p>
           <div class="input-field field-email">
             <input
               type="email"
@@ -27,17 +29,20 @@
               placeholder="Enter Your Mail"
               class="email"
               required
+              onkeyup="validateEmail()"
             />
           </div>
-          <p class="error">Please enter a valid Email</p>
+          <span class="error" id="email-error"></span>
           <div class="input-field">
             <input
               type="number"
               id="phone"
               required
               placeholder="Phone Number"
+              onkeyup="validatePhone()"
             />
           </div>
+          <span class="error" id="phone-error"></span>
           <div class="input-field-gd">
             <label for="gender">Gender:</label>
             <select id="gender" name="gender">
@@ -48,10 +53,10 @@
           <div class="input-field">
             <input type="password" id="password" placeholder="Password" />
           </div>
-          <p class="error">Something is missing, Fill all fields</p>
         </div>
 
         <button type="submit" id="submit">Submit</button>
+        <span class="error" id="submiterror"></span>
       </form>
     </div>
 
