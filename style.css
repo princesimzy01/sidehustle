@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2rem;
+  background-color: rgb(255, 244, 231);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: blanchedalmond;
+}
+.container h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: rgb(61, 121, 241);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  position: relative;
+  color: aliceblue;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: rgb(36, 36, 243);
+}
+#submit {
+  width: 30%;
+}
+.container form {
+  margin-top: 1rem;
+}
+
+.field {
+  width: 90%;
+  margin: auto;
+}
+
+form .input-field {
+  position: relative;
+  height: 2.4rem;
+  width: 100%;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid transparent;
+}
+.input-field {
+  margin: 1rem 0;
+}
+.error {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+}
+.invalid .error {
+  display: flex;
+}
+.input-field-gd {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 2.4rem;
+  align-items: center;
+}
+.input-field-gd select {
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+}
